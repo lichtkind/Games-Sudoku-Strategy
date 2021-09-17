@@ -1,0 +1,32 @@
+
+
+
+
+
+
+81 cell
+
+3 * 9 * 2 = 54 (2 dir) intersection of 3 cell
+
+
+9 row
+9 col   = 27 group of 9 cell
+9 pad
+
+9 * 9 cell
+
+
+history stack themed stack
+
+log stack:
+
+  - [ row_nr, col_nr, +sol/-cand, strategy, source ]
+
+
+
+message
+log
+
+
+all msg: msgHash
+ak Log: msgQ

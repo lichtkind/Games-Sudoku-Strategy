@@ -1,0 +1,61 @@
+
+
+
+
+Links: Zukunft / Möglichkeiten / erlaubte Strategien
+
+Mitte : Jetzt / Sudokugitter / Werkzeuge / Stats
+
+Rechts Vergangenheit - Log
+
+
+
+
+------------------------------------------------------------------------
+
+  --< Moves >----         --global--           --< Log >-----------
+ | - S           |                            | << | >> |..| O | C |
+ |               |    -------------------     |....................|
+ |               |    |     |     |     |     |                    |
+ | o             |    |     |     |     |     |                    |
+ |               |     -----------------      |                    |
+ |               |    |     |     |     |     |                    |
+ |               |    |     |     |     |     |                    |
+ |               |     -----------------      |                    |
+ | o             |    |     |     |     |     |                    |
+ |               |    |     |     |     |     |                    |
+ |               |    -------------------     |                    |
+ |               |                            |                    |
+ |               |                            |                    |
+ |               |                            |                    |
+ |               |     -- select --           |                    |
+ |               |                            |                    |
+ -----------------                            ----------------------
+
+-------------------------------------------------------------------------
+
+
+--global--
+
+   New  Gen  Load  Write
+
+
+Solved Rows Cols Pads Cells
+Cand.
+
+(solved cells   candidates)
+
+
+
+
+
+
+Select:
+
+Digit:: 1: 2: 3: 4:
+highlight
+Color
+
+
+-- < Log > --
+  << undo | redo >> | items | sol | cand | fork

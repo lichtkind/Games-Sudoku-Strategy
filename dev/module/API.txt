@@ -1,0 +1,43 @@
+
+
+
+package Grid:
+
+ = CellMemory:
+
+    new                    (                  --> . )
+    clone                  ( .                --> . )
+    restate                ( $state           --> . )
+    state                  ( .                --> $state )
+
+    get_solution           ( .                --> $sol )     # [0..9]
+    solvable               ( .                --> ?    )     # @cand == 1
+    solve                  ( .       - $sol   --> $sol|[n] ) # additionally deleted candidates
+    unsolve                ( .                --> $sol )     # (as in get_solution)
+                             .
+    get_candidates         ( .       - 'bits' --> @cand|$.cand) # cand is 01 stream when bits
+    get_candidates_missing ( .       - 'bits' --> @cand|$.cand) # cand is 01 stream when bits
+    has_candidate          ( . $cand -        --> $cand|0)
+    add_candidate          ( . $cand -        --> $cand|0)
+    remove_candidate       ( . $cand -        --> $cand|0)
+
+ = GroupMemory
+
+    new
+    reset
+
+    find_progress     ( .             --> @msg)
+
+    add_solution      ( . $digit $pos --> undef|$deg )
+    remove_solution   ( . $digit $pos --> undef|$deg )
+    add_candidate     ( . $digit $pos --> ? )
+    remove_candidate  ( . $digit $pos --> ? )
+
+
+# sub bitmask { 1 << ($_[0] - 1) }
+
+
+
+gs  type   group solution
+gc  type   (last) group candidate
+gis        group inter section
