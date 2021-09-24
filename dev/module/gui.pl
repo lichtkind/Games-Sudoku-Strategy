@@ -337,3 +337,14 @@ sub OnQuit { my( $self, $event ) = @_; $self->Close( 1 ); }
 sub OnExit { my $app = shift;  1; }
 
 package Games::Sudoku::Strategy::Window;
+
+sub new {
+    
+}
+
+
+package Games::Sudoku::Strategy::Paint;
+
+sub new {
+    
+}
